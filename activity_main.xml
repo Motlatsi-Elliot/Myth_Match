@@ -3,63 +3,47 @@
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D0F14">
+    android:background="#0F172A">
 
-    <!-- ═══════════════════════════════════════════
-         SCREEN 1 — WELCOME
-    ════════════════════════════════════════════ -->
+    <!--Welcome Screen-->
     <ScrollView
-        android:id="@+id/screenWelcome"
+        android:id="@+id/welcomeScreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingStart="24dp"
-            android:paddingEnd="24dp"
+            android:paddingEnd="30dp"
             android:paddingBottom="32dp">
 
-            <!-- Icon -->
-            <LinearLayout
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="48dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/bg_gradient"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="💡"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-            <!-- Title -->
+            <!-- App Title-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Life Hack or\nUrban Myth?"
-                android:textColor="#EEF0F6"
-                android:textSize="26sp"
+                android:text="Life Hack \n OR \n Urban Myth ?"
+                android:textColor="#fff"
+                android:textSize="28dp"
                 android:textStyle="bold"
-                android:lineSpacingMultiplier="1.2"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="15dp"/>
 
-            <!-- Tagline -->
+            <!-- App description -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Test your knowledge — separate real hacks from internet myths. How sharp is your common sense?"
-                android:textColor="#7A8299"
-                android:textSize="13sp"
+                android:text="Test your knowledge — Learn useful and Safe Real World shortcuts, Separate Life hacks from Urban Myths"
+                android:textColor="#808080"
+                android:textSize="17sp"
                 android:lineSpacingMultiplier="1.5"
+                android:textStyle="bold|italic"
                 android:layout_marginBottom="28dp"/>
 
             <!-- Stats Row -->
@@ -67,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="28dp">
 
@@ -93,34 +77,7 @@
                         android:layout_height="wrap_content"
                         android:text="Questions"
                         android:textColor="#7A8299"
-                        android:textSize="10sp"
-                        android:layout_marginTop="2dp"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/bg_card2"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="~3"
-                        android:textColor="#F0C040"
-                        android:textSize="20sp"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Minutes"
-                        android:textColor="#7A8299"
-                        android:textSize="10sp"
+                        android:textSize="15sp"
                         android:layout_marginTop="2dp"/>
                 </LinearLayout>
 
@@ -144,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:text="Ranked"
                         android:textColor="#7A8299"
-                        android:textSize="10sp"
+                        android:textSize="15sp"
                         android:layout_marginTop="2dp"/>
                 </LinearLayout>
             </LinearLayout>
@@ -153,50 +110,28 @@
             <Button
                 android:id="@+id/btnStart"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
+                android:layout_height="61dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/bg_gradient"
                 android:gravity="center"
-                android:stateListAnimator="@null"
-                android:text="▶ Start Quiz"
-                android:textAlignment="center"
-                android:textColor="#f3f3f3"
-                android:textSize="20sp"
-                android:textStyle="bold|normal" />
-
-            <!-- How to Play -->
-            <!--<Button
-                android:id="@+id/btnHowToPlay"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@drawable/bg_outline"
-                android:gravity="center"
-                android:stateListAnimator="@null"
-                android:text="How to Play"
+                android:text="Start Quiz"
                 android:textAlignment="center"
                 android:textColor="#fff"
-                android:textSize="20sp" />-->
-
+                android:textSize="21sp"
+                android:textStyle="bold|normal" />
         </LinearLayout>
     </ScrollView>*/
 
-    <!-- ═══════════════════════════════════════════
-         SCREEN 2 — QUESTION
-    ════════════════════════════════════════════ -->
+    <!--FlashCard QUESTION Screen-->
 
-    <!-- ═══════════════════════════════════════════
-         SCREEN 3 — SCORE
-    ════════════════════════════════════════════ -->
     <LinearLayout
-        android:id="@+id/screenQuestion"
+        android:id="@+id/questionScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#0D0F14"
         android:orientation="vertical"
         android:padding="24dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <!-- Progress Row -->
         <LinearLayout
@@ -207,34 +142,12 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <!--<TextView
-                android:id="@+id/tvQuestionCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1 / 10"
-                android:textColor="#7A8299"
-                android:textSize="12sp"
-                android:textStyle="bold" />-->
-
-            <!--<ProgressBar
-                android:id="@+id/progressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="0dp"
-                android:layout_height="4dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:max="10"
-                android:progress="1"
-                android:progressDrawable="@drawable/progress_bar" />-->
-
             <TextView
                 android:id="@+id/tvScoreLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Score: 0"
                 android:textColor="#F0C040"
-
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -259,7 +172,7 @@
                 android:paddingBottom="4dp"
                 android:text="🔍 HACK OR MYTH?"
                 android:textColor="#3DE4A4"
-                android:textSize="12sp"
+                android:textSize="13.5dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -268,12 +181,12 @@
                 android:layout_height="wrap_content"
                 android:lineSpacingMultiplier="1.4"
                 android:text="The average person's left hand does 56% of 't."
-                android:textColor="#EEF0F6"
+                android:textColor="#FFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Hack / Myth Buttons -->
+        <!-- Hack & Myth Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -304,10 +217,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="It's real!"
+                    android:layout_marginTop="4dp"
+                    android:text="True"
                     android:textColor="#803DE4A4"
-                    android:textSize="15sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -333,10 +246,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="4dp"
                     android:text="False!"
                     android:textColor="#80FF5E6C"
-                    android:textSize="15sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -347,18 +260,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/bg_feedback"
-            android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="14dp"
             android:visibility="visible">
 
-           <TextView
-                android:id="@+id/tvFeedbackIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:text="✅"
-                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tvFeedbackText"
@@ -375,19 +280,19 @@
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/bg_card2"
+            android:background="@drawable/bg_gradient"
             android:gravity="center"
             android:stateListAnimator="@null"
             android:text="Next Question"
             android:textColor="#fff"
             android:textSize="18sp"
-            android:textStyle="normal"
-            android:visibility="gone" />
+            android:textStyle="bold"
+            android:visibility="visible" />
 
     </LinearLayout>
 
 
-        <!-- SCREEN 3 SCORE-->
+        <!-- SCORE Screen-->
     <ScrollView
         android:id="@+id/screenScore"
         android:layout_width="match_parent"
@@ -399,20 +304,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="110dp"
             android:gravity="center_horizontal"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"
             android:paddingBottom="32dp">
-
-            <!-- Score Ring -->
-            <!--<com.lifehack.app.ScoreRingView
-                android:id="@+id/scoreRing"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="20dp"/>-->
 
             <!-- Badge -->
             <TextView
@@ -423,7 +319,7 @@
                 android:layout_marginBottom="18dp"
                 android:text="Master Hacker! 🏆"
                 android:textColor="#F0C040"
-                android:textSize="22sp"
+                android:textSize="25sp"
                 android:textStyle="bold"/>
 
             <!-- Sub Text -->
@@ -469,7 +365,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Correct"
-                        android:textColor="#7A8299"
+                        android:textColor="#808080"
                         android:textSize="15sp"
                         android:layout_marginTop="3dp"/>
                 </LinearLayout>
@@ -497,34 +393,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Wrong"
-                        android:textColor="#7A8299"
-                        android:textSize="15sp"
-                        android:layout_marginTop="3dp"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginStart="5dp"
-                    android:background="@drawable/bg_card2"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:paddingTop="14dp"
-                    android:paddingBottom="14dp">
-                    <TextView
-                        android:id="@+id/tvAccuracy"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="70%"
-                        android:textColor="#F0C040"
-                        android:textSize="22sp"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Accuracy"
-                        android:textColor="#7A8299"
+                        android:textColor="#808080"
                         android:textSize="15sp"
                         android:layout_marginTop="3dp"/>
                 </LinearLayout>
@@ -565,15 +434,13 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- ═══════════════════════════════════════════
-         SCREEN 4 — REVIEW
-    ════════════════════════════════════════════ -->
+    <!--SCREEN 4 — REVIEW -->
     <ScrollView
         android:id="@+id/screenReview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:id="@+id/reviewList"
@@ -594,7 +461,7 @@
                 android:paddingTop="20dp"
                 android:paddingBottom="16dp"/>
 
-            <!-- Review items added dynamically in Kotlin -->
+            <!-- Return back to score Button -->
 
             <Button
                 android:id="@+id/btnBackToScore"
@@ -602,7 +469,7 @@
                 android:layout_height="52dp"
                 android:background="@drawable/bg_card2"
                 android:text="Back to Score"
-                android:textColor="#EEF0F6"
+                android:textColor="#fff"
                 android:textAlignment="center"
                 android:paddingTop="15sp"
                 android:textSize="18sp"
