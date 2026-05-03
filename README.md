@@ -9,7 +9,7 @@ https://youtu.be/ci4Pakuv9zw
 MythMatch is a Native android app designed to dertemine if a given statement is a Life Hack or just an Urban Myth, It does this using the flashcards that contains differents statements that will either be a life hack or a Myth
 
 # How the App Works
-The app has 4 Screens That the user will move throuh as the use the App
+The app has 4 Screens That the user will move throuh as they use the App
 
 ### SCREEN 1 - WELCOME SCREEN
 
@@ -20,20 +20,20 @@ The app has 4 Screens That the user will move throuh as the use the App
 
 :It has a sub title and a short description and a start box showing how many questions there are
 
-: Also has a START QUIZ  button that will direct the user to the next sreen wich is the FLASHCARD QUESTION SCREEN
+: Also has a START QUIZ  button that will direct the user to the next sreen which is the FLASHCARD QUESTION SCREEN
 
 ### SCREEN 2 - FLASHCARD QUESTION SCREEN
 
 <img width="200" height="300" alt="Media Player 5_3_2026 4_51_37 PM" src="https://github.com/user-attachments/assets/5f7b7aa8-9779-42f3-8ca1-b4db8f2b3639" />
 
 
-:Here is the screen were by different kinds of statements will be provided in which the user will have to dertimine if they are just a Myth or Life hacks
+:Here is the screen were by different kinds of statements will be provided in which the user will have to dertermine if they are just a Myth or Life hack
 
 :It has the flashcard were by the statements will appear and keep changing as the user click the next button
 
-:Has 2 buttons that the user click to answer if the statement is HACK ✅ or Myth❌
+:Has 2 buttons that the user click to answer if the statement is a HACK ✅ or Myth❌
 
-:After answering, a feedback bax appears telling the user if they were corrext and explaining why.
+:After answering, a feedback box appears telling the user if they were correct and explaining why.
 
 :A NEXT QUESTION button to proceed to the next screen
 
@@ -44,7 +44,7 @@ The app has 4 Screens That the user will move throuh as the use the App
 
 :This screen will appear automatically after the 10th question has been answered
 
-: It will show how many answers ere correct and how many were wrong
+: It will show how many answers were correct and how many were wrong
 
 :Displays a personalised badge based on the score (Master hacker - Hack Detective - Getting there - Stay Safe)
 
@@ -55,9 +55,9 @@ The app has 4 Screens That the user will move throuh as the use the App
 <img width="200" height="300" alt="Media Player 5_3_2026 5_21_48 PM" src="https://github.com/user-attachments/assets/b4f71656-cab6-4db2-bd74-9824e32bee4d" />
 
 
-:Shows all 10 questions with the correct answrs and a short explanation for each
+:Shows all 10 questions with the correct answers and a short explanation for each
 
-:The BACK TO SCORE button to will to the score screen
+:The BACK TO SCORE button that  will go back to the score screen
 
 ## Project Structure
   1. #### Tracking Variable
