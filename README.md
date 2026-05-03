@@ -17,6 +17,8 @@ The app has 4 Screens That the user will move throuh as the use the App
 : Also has a START QUIZ  button that will direct the user to the next sreen wich is the FLASHCARD QUESTION SCREEN
 
 ### SCREEN 2 - FLASHCARD QUESTION SCREEN
+![Uploading question.png…]()
+
 :Here is the screen were by different kinds of statements will be provided in which the user will have to dertimine if they are just a Myth or Life hacks
 
 :It has the flashcard were by the statements will appear and keep changing as the user click the next button
