@@ -108,10 +108,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-    // ─────────────────────────────────────────────────────────────────
     // SCREEN 2 — Question
-    // ─────────────────────────────────────────────────────────────────
     fun loadQuestion() {
         // Hide feedback and next button at the start of each question
         feedbackBox.visibility = View.GONE //Hide the feedback box when that screen is shown
