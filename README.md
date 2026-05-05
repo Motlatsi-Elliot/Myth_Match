@@ -71,25 +71,25 @@ The app has 4 Screens That the user will move throuh as they use the App
      
      var userAnswers = arrayOfNulls<Booleans>(10)
 
- 4.  #### connectViews()
+  2.  #### connectViews()
       links the xml with the kt file
      
       screenWelcome = findViewById(R.id,welcomeScreen)
 
-6.  #### showScreen()
+  3.  #### showScreen()
       A function that hides all 4 screens and then makes only the requested one visible.
 
-7. #### loadQuestion()
-    Runs once per question,Works like a loop as it keeps loading questions as long as the condition is false in this case as long as questions are less that 10
+  4. #### loadQuestion()
+     Runs once per question,Works like a loop as it keeps loading questions as long as the condition is false in this case as long as questions are less that 10
 
-8. #### checkAnswer()
-   This function compares the user's response while they clicked the 2 buttons, the Hyth and Hack button with the correct answer,If ever the thier answer is correct,the score increases by one hence the use of    the  increment score++ which is the same as score = score + 1, From there the feedbackbox will appear with either the green background (correct answer) or the red background(wrong answer)
+  5. #### checkAnswer()
+     This function compares the user's response while they clicked the 2 buttons, the Hyth and Hack button with the correct answer,If ever the thier answer is correct,the score increases by one hence the use of       the  increment score++ which is the same as score = score + 1, From there the feedbackbox will appear with either the green background (correct answer) or the red background(wrong answer)
 
-9.showScoreScreen()
-This calculates the percentage score and picks the correct answer badge and subtitle using the IF/ELSE. It updates the correct and wrong stat boxes tthen switches to the score screen
+  6.showScoreScreen()
+     This calculates the percentage score and picks the correct answer badge and subtitle using the IF/ELSE. It updates the correct and wrong stat boxes tthen switches to the score screen
 
-10.showReviewScreen()
-Loops through all 10 questions using a for loop and builds a Textview card for each one dynamically in Kotlin  code.Each of the card will show the question and the correct answer and whether the user was correct or Wrong and the explanation.
+  7.showReviewScreen()
+     Loops through all 10 questions using a for loop and builds a Textview card for each one dynamically in Kotlin  code.Each of the card will show the question and the correct answer and whether the user was         correct or Wrong and the explanation.
 
 
 
